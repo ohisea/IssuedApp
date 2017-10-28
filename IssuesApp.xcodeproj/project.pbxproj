@@ -12,6 +12,7 @@
 		8722CB891FA46E8C00051B81 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8722CB871FA46E8C00051B81 /* LaunchScreen.storyboard */; };
 		8722CB911FA4730C00051B81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8722CB901FA4730C00051B81 /* Assets.xcassets */; };
 		8722CB941FA474B300051B81 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8722CB931FA474B300051B81 /* LoginViewController.swift */; };
+		8722CB971FA4812500051B81 /* GlobalState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8722CB961FA4812500051B81 /* GlobalState.swift */; };
 		9544728B58D9416A795F3477 /* Pods_IssuesApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CD6E31054C2B2416422AEB6 /* Pods_IssuesApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +26,7 @@
 		8722CB8A1FA46E8C00051B81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8722CB901FA4730C00051B81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8722CB931FA474B300051B81 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		8722CB961FA4812500051B81 /* GlobalState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalState.swift; sourceTree = "<group>"; };
 		8D5376EEB2A6DFDE04AA0531 /* Pods-IssuesApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IssuesApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-IssuesApp/Pods-IssuesApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -61,6 +63,7 @@
 		8722CB7D1FA46E8C00051B81 /* IssuesApp */ = {
 			isa = PBXGroup;
 			children = (
+				8722CB951FA4810800051B81 /* Util */,
 				8722CB921FA4749100051B81 /* VIew */,
 				8722CB901FA4730C00051B81 /* Assets.xcassets */,
 				8722CB7E1FA46E8C00051B81 /* AppDelegate.swift */,
@@ -77,6 +80,14 @@
 				8722CB931FA474B300051B81 /* LoginViewController.swift */,
 			);
 			path = VIew;
+			sourceTree = "<group>";
+		};
+		8722CB951FA4810800051B81 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				8722CB961FA4812500051B81 /* GlobalState.swift */,
+			);
+			path = Util;
 			sourceTree = "<group>";
 		};
 		A173AED1F903578D4948FC8E /* Frameworks */ = {
@@ -233,6 +244,7 @@
 			files = (
 				8722CB941FA474B300051B81 /* LoginViewController.swift in Sources */,
 				8722CB7F1FA46E8C00051B81 /* AppDelegate.swift in Sources */,
+				8722CB971FA4812500051B81 /* GlobalState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

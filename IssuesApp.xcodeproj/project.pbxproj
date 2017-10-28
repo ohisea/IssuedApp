@@ -8,10 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		8722CB7F1FA46E8C00051B81 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8722CB7E1FA46E8C00051B81 /* AppDelegate.swift */; };
-		8722CB811FA46E8C00051B81 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8722CB801FA46E8C00051B81 /* ViewController.swift */; };
 		8722CB841FA46E8C00051B81 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8722CB821FA46E8C00051B81 /* Main.storyboard */; };
-		8722CB861FA46E8C00051B81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8722CB851FA46E8C00051B81 /* Assets.xcassets */; };
 		8722CB891FA46E8C00051B81 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8722CB871FA46E8C00051B81 /* LaunchScreen.storyboard */; };
+		8722CB911FA4730C00051B81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8722CB901FA4730C00051B81 /* Assets.xcassets */; };
+		8722CB941FA474B300051B81 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8722CB931FA474B300051B81 /* LoginViewController.swift */; };
 		9544728B58D9416A795F3477 /* Pods_IssuesApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CD6E31054C2B2416422AEB6 /* Pods_IssuesApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -20,11 +20,11 @@
 		7495E488195BE98486B4EE2C /* Pods-IssuesApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IssuesApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IssuesApp/Pods-IssuesApp.debug.xcconfig"; sourceTree = "<group>"; };
 		8722CB7B1FA46E8C00051B81 /* IssuesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IssuesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8722CB7E1FA46E8C00051B81 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8722CB801FA46E8C00051B81 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8722CB831FA46E8C00051B81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		8722CB851FA46E8C00051B81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8722CB881FA46E8C00051B81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8722CB8A1FA46E8C00051B81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8722CB901FA4730C00051B81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8722CB931FA474B300051B81 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		8D5376EEB2A6DFDE04AA0531 /* Pods-IssuesApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IssuesApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-IssuesApp/Pods-IssuesApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -61,14 +61,22 @@
 		8722CB7D1FA46E8C00051B81 /* IssuesApp */ = {
 			isa = PBXGroup;
 			children = (
+				8722CB921FA4749100051B81 /* VIew */,
+				8722CB901FA4730C00051B81 /* Assets.xcassets */,
 				8722CB7E1FA46E8C00051B81 /* AppDelegate.swift */,
-				8722CB801FA46E8C00051B81 /* ViewController.swift */,
 				8722CB821FA46E8C00051B81 /* Main.storyboard */,
-				8722CB851FA46E8C00051B81 /* Assets.xcassets */,
 				8722CB871FA46E8C00051B81 /* LaunchScreen.storyboard */,
 				8722CB8A1FA46E8C00051B81 /* Info.plist */,
 			);
 			path = IssuesApp;
+			sourceTree = "<group>";
+		};
+		8722CB921FA4749100051B81 /* VIew */ = {
+			isa = PBXGroup;
+			children = (
+				8722CB931FA474B300051B81 /* LoginViewController.swift */,
+			);
+			path = VIew;
 			sourceTree = "<group>";
 		};
 		A173AED1F903578D4948FC8E /* Frameworks */ = {
@@ -151,7 +159,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8722CB891FA46E8C00051B81 /* LaunchScreen.storyboard in Resources */,
-				8722CB861FA46E8C00051B81 /* Assets.xcassets in Resources */,
+				8722CB911FA4730C00051B81 /* Assets.xcassets in Resources */,
 				8722CB841FA46E8C00051B81 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -180,9 +188,18 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-IssuesApp/Pods-IssuesApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/OAuthSwift/OAuthSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OAuthSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -214,7 +231,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8722CB811FA46E8C00051B81 /* ViewController.swift in Sources */,
+				8722CB941FA474B300051B81 /* LoginViewController.swift in Sources */,
 				8722CB7F1FA46E8C00051B81 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -295,6 +312,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -344,6 +362,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -359,7 +378,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.minq.IssuesApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -375,7 +394,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.minq.IssuesApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

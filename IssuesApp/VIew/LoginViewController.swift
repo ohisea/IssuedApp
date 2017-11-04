@@ -7,15 +7,11 @@
 //
 
 import UIKit
-import OAuthSwift
+
 
 class LoginViewController: UIViewController {
 
-	let oauth: OAuth2Swift = OAuth2Swift(consumerKey: "f1a1f2f8256e35df0dbe",
-	                                     consumerSecret: "53776de4a3287080657ccd7f22cfd9b682a4bc98",
-	                                     authorizeUrl: "https://github.com/login/oauth/authorize",
-	                                     accessTokenUrl: "https://github.com/login/oauth/access_token",
-	                                     responseType: "code")
+	
 	
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,14 +25,10 @@ class LoginViewController: UIViewController {
     }
 	
 	@IBAction func loginToGitHubButtonTap() {
-		
-		oauth.authorize(withCallbackURL: "issuesapp://oauth-callback/github", scope: "user,repo", state: "state", success: { (credential, _, _) in
-			let token = credential.oauthToken
-			print("token : \(token)")
-			
-		}) { (error) in
-			print(error.localizedDescription)
+		App.api.getToken {
+			print("callback handle")
 		}
+		
 	}
 
     /*
